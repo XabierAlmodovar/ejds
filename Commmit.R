@@ -40,3 +40,4 @@ df3<-df %>%
   group_by(Invoice)%>%
   summarise(precio_total=sum(Price))
 df3
+
