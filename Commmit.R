@@ -25,3 +25,18 @@ df_media<-df %>%
   summarise(precio_medio=mean(Price))
 
 df_media
+
+# 3er commit
+# 12. Calcula el número de productos por pedido
+df
+df2 <- df %>%
+  group_by(Invoice)%>%
+  summarise(cantidad=n())
+df2
+
+
+# 13. Calcula el precio por pedido
+df3<-df %>%
+  group_by(Invoice)%>%
+  summarise(precio_total=sum(Price))
+df3
